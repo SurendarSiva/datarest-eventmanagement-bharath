@@ -5,4 +5,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 public interface ParticipantRepository extends PagingAndSortingRepository<Participant, Long> {
+    Participant findById(Long id);
+
+    void save(Participant participant);
 }
